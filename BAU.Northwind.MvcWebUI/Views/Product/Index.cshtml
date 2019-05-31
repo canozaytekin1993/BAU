@@ -1,0 +1,20 @@
+﻿@model BAU_Northwind_MvcWebUI.Models.ProductListViewModel
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>
+        <td>Product Name</td>
+        <td>Unit Price</td>
+        <td>Units In Stocks</td>
+    </tr>
+    @foreach (var product in Model.Products)
+    {
+        <tr>
+            <td>@product.ProductName Name</td>
+            <td>@product.UnitPrice</td>
+            <td>@product.UnitInStock</td>
+        </tr>
+    }
+</table>
